@@ -200,50 +200,12 @@ VITE_API_BASE_URL=http://127.0.0.1:5000
 
 ---
 
-## 🧩 Screenshots
-
-> Replace with your images:
-
-- `docs/screenshot_kpis.png` — KPI row
-- `docs/screenshot_chart.png` — main chart with confidence band + dotted competitor lines
-- `docs/screenshot_whatif.png` — what-if modal
-
-```md
-![KPI Row](docs/screenshot_kpis.png)
-![Main Chart](docs/screenshot_chart.png)
-![What-if](docs/screenshot_whatif.png)
-```
-
----
-
-## 🔐 Security & Privacy
-
-- No PII is collected by default.
-- If you add authentication, protect the API and restrict CORS origins.
-- Validate/whitelist incoming feature keys server-side.
-
----
-
 ## 🛠 Troubleshooting
 
 - **Kenya/India lines not visible**: ensure `history` rows from API include `kenya_bopf_price_usd_w` and `india_bopf_price_usd_w`, and that the React chart uses them.
 - **Confidence band not showing**: API must return `ci_lower` and `ci_upper`.
 - **NaN in tooltips**: some rows may have null competitor values; the React tooltip already guards for nulls.
 - **CORS errors**: ensure `CORS(app)` and that the frontend base URL matches the API URL.
-
----
-
-## 🤝 Contributing
-
-1. Fork & create a feature branch
-2. Write clean commits and add tests or screenshots for UI changes
-3. Open a PR with a clear description
-
----
-
-## 📜 License
-
-MIT (see `LICENSE`).
 
 ---
 
